@@ -1,0 +1,18 @@
+{
+  "validation_kind": "STATIC_PACKAGE_CHECKS_AND_MOCK_RUNNER_ONLY",
+  "unchanged_prior_lean_sources": 36,
+  "new_lean_modules": 2,
+  "active_modules": 37,
+  "import_order": "PASS",
+  "source_hashes": "PASS",
+  "runner_pins": "PASS",
+  "single_cmd_crlf": "PASS",
+  "hash_accelerator_preserved": "PASS",
+  "new_source_no_admissions_scan": "PASS",
+  "independent_source_reviews": "TWO_READ_ONLY_REVIEWS_NO_CHANGES_RECOMMENDED",
+  "mock_cases_passed": 9,
+  "native_lean_executed": false,
+  "native_build": "PENDING",
+  "native_axiom_audit": "PENDING",
+  "conjecture_proof": "NOT_SUPPLIED"
+}

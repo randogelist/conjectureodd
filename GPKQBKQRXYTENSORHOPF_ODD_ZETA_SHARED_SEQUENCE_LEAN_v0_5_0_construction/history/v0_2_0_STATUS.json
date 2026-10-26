@@ -1,0 +1,30 @@
+{
+  "package": "GPKQBKQRXYTENSORHOPF_ODD_ZETA_WEIGHT_DEPENDENT_GAP_LEAN_v0_2_0_construction",
+  "version": "v0_2_0",
+  "branch": "GPKQBKQRXYTENSORHOPF_ODD_ZETA",
+  "mode": "A_TIER_LEAN",
+  "target": "LOCAL_COMPILER",
+  "local_lean_executed": false,
+  "native_build": "PENDING_USER_WINDOWS_COMPILER",
+  "new_endpoint_axiom_audit": "PENDING_USER_WINDOWS_COMPILER",
+  "conjecture_truth": "OPEN_NOT_PROVED",
+  "unconditional_all_odd_zeta_irrationality": "NOT_CLAIMED",
+  "existing_lean_sources_preserved": 36,
+  "active_retained_modules": 35,
+  "new_active_modules": 2,
+  "active_module_count": 37,
+  "old_audit_source": "PRESERVED_NOT_IN_ACTIVE_BUILD_PLAN",
+  "expected_matching_cache_run": {
+    "compiled": 2,
+    "reused": 35,
+    "kernel_rechecked": 0
+  },
+  "cache_schema": "ZH_NATIVE_RECEIPT_V1",
+  "old_fixed_profile_conjecture": "PRESERVED_HISTORICAL_NOT_A_NEW_ENDPOINT_PREMISE",
+  "new_endpoint_premises": [
+    "WEIGHT_DEPENDENT_GAP_CONJECTURE",
+    "APERY_ZETA_THREE"
+  ],
+  "static_validation": "PASS_PACKAGE_INTEGRITY_AND_NINE_MOCK_CASES_ONLY",
+  "runner_js_sha256": "b4da78c4c290e89e8ce7c08b05db099ae70d69452c8d4f54022a76ab7639b9b5"
+}

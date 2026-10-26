@@ -1,0 +1,30 @@
+{
+  "check_scope": "STATIC_AND_MOCK_HOST_SIMULATION_ONLY",
+  "all_36_Lean_sources_unchanged_from_v0_1_4": "PASS_BYTE_FOR_BYTE",
+  "sources_tsv_and_migration_baseline_unchanged": "PASS_BYTE_FOR_BYTE",
+  "all_36_source_plan_hashes": "PASS",
+  "bootstrap_js_sha256": "ad6218c4ad3869d773ee1a0e4786124c2372a8e69f144fd979b31ddeb7753f9c",
+  "hash_helper_source_sha256": "a8c29c6699432a75ea03541b021e6e722b5d2e0f03dc161241850ad71902c31b",
+  "bootstrap_embedded_js_hash_matches": "PASS",
+  "js_embedded_helper_source_hash_matches": "PASS",
+  "runner_ascii_crlf": "PASS",
+  "exactly_one_run_cmd": "PASS",
+  "node_javascript_syntax_check": "PASS",
+  "native_helper_self_test_vector_constants": "5_OF_5_VERIFIED_WITH_PYTHON_HASHLIB",
+  "mock_reports": {
+    "SIMULATED_RUNNER_CHECKS.json": 29,
+    "WINDOWS_HASH_PROTOCOL_CHECKS.json": 26
+  },
+  "existing_v0_1_4_receipts": "36_REUSED_ZERO_COMPILES_ZERO_REPLAYS_IN_MOCK_HOST",
+  "snapshot_format_and_receipt_keys": "BYTE_IDENTICAL_IN_MOCK_COMPARISON",
+  "batch_process_reduction": "2_BATCH_CALLS_FOR_TWO_1008_FILE_ENVIRONMENT_SNAPSHOTS_IN_MOCK_HOST",
+  "independent_static_runner_review": "COMPLETED_NO_REMAINING_BLOCKER_REPORTED",
+  "native_windows_speedup_factor": "NOT_MEASURED",
+  "lean_elaboration": "NOT_RUN_USER_PROHIBITED",
+  "kernel_recheck": "NOT_RUN_USER_PROHIBITED",
+  "native_windows_execution": "NOT_RUN",
+  "native_csharp_compilation": "NOT_RUN",
+  "independent_axiom_audit": "NOT_RUN",
+  "build_pass": "NOT_CLAIMED",
+  "proof_scope": "CONJECTURE_AND_GRAM_FRONTIER_CONDITIONAL"
+}

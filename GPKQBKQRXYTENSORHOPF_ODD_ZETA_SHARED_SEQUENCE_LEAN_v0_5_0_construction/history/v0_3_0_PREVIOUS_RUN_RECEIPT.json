@@ -1,0 +1,18 @@
+{
+  "evidence_kind": "USER_SUPPLIED_CONSOLE_TRANSCRIPT_NOT_INDEPENDENT_REEXECUTION",
+  "package": "GPKQBKQRXYTENSORHOPF_ODD_ZETA_WEIGHT_DEPENDENT_GAP_LEAN_v0_2_0_construction",
+  "target": "LOCAL_COMPILER",
+  "build": "PASS_REPORTED_BY_USER",
+  "axiom_audit": "PASS_INDEPENDENT_KERNEL_WALK_REPORTED_BY_USER",
+  "modules_compiled": 2,
+  "modules_reused": 35,
+  "modules_kernel_rechecked": 0,
+  "successful_module_receipts_preserved_in_reported_run": 2,
+  "active_module_count": 37,
+  "environment_files": 44759,
+  "after_environment_hash_elapsed_ms": 3160,
+  "native_receipts_location": "USER_WINDOWS_LEAN_ANCHORINGS_CACHE",
+  "local_copy_of_native_receipts": "NOT_AVAILABLE",
+  "reuse_policy": "RUNNER_MUST_VALIDATE_MATCHING_NATIVE_RECEIPTS_AND_FINGERPRINTS",
+  "new_modules_native_status": "PENDING"
+}

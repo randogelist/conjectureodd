@@ -1,0 +1,97 @@
+DERIVATION REVIEW -- ACTUAL ZH FAMILY
+Evidence boundary: paper reviewed, not Lean formalized, unless identified below.
+No Lean, Lake, or leanchecker was run on the authoring host.
+
+OBJECTS AND CERTIFIED BASELINE
+For a fixed k>=2 and admissible p=(m,a,b), put N=a*t, K=b*t,
+h=(b-a)*t, t>=1. L is the absolute leading coefficient of the canonical
+primitive integer polynomial; R is the actual Gram/slope determinant ratio.
+E=L*R=P_t(zeta(2*k+1))>0 and deg(P_t)=h. These actual-family identities,
+positivity, and the conditional irrationality transfers are in the retained
+Lean sources. The user reported v0.3.0 native BUILD=PASS and independent
+axiom-audit PASS, with 39 modules reused. This does not certify the new
+v0.4.0 router before its own native run.
+
+POSITIVE PAPER ESTIMATES RECHECKED
+1. On p=(1,1,2), for every fixed k>=2:
+     log R_(k,t) <= -delta*t^2 + O_k(t*log(t+1)),
+     delta = 2*log(pi/2) + (9/2)*log(3) > 5.
+   Hence R_(k,t)<=exp(-5*t^2) eventually. The argument uses the positive
+   Gram integral, q(y^2)<=(t!)^4/((2t)!)^2 * exp(pi*y), Hadamard's
+   inequality, the exact slope product, and factorial asymptotics.
+
+2. For m=1, with ell=lcm(1,...,2*K+2*k+2):
+     L divides [(2*k)! * ell^(4*k+3)]^h.
+   Thus, on p=(1,1,2), limsup log(L_(k,t))/t^2 <= 16*k+12.
+   In particular the available weight-five upper bound is 44.
+   The integer-valued-polynomial proof uses the Bernoulli functional with
+   B_1=-1/2. Actual ZH moments involve only even Bernoulli indices >=2;
+   a future Lean formalization must make that convention agreement explicit.
+
+3. At FIXED geometry, for every fixed k>=1:
+     R_(k+1)/R_k <= ((2*k)!)^h *
+       [(4*m*N+2*h+2*k+3)/(N+1)]^(2*h).
+   Along N=a*t,K=b*t this is at most exp(C_(k,p)*t), with finite C_(k,p).
+   This controls R only. It neither bounds the primitive L ratio nor
+   compares different geometries p_k and p_(k+1).
+
+RATE DIRECTION SAFEGUARDS
+To prove a strict gap, compare a HEIGHT UPPER rate with a DECAY LOWER rate:
+     upper(log L/t^2) < lower(-log R/t^2).
+To exclude a strict gap, compare a HEIGHT LOWER rate with a DECAY UPPER rate.
+Failure of the first comparison is only INCONCLUSIVE, not exclusion.
+Thus the available bounds 44 and delta~=5.84692 do not show that the
+weight-five profile fails. They also do not prove that it succeeds.
+The number 44 is a coarse upper bound, not the established true height rate.
+
+INVARIANTS MUST REMAIN DISTINCT
+W(k,p): for every integer q>=2 there is t>=1 with
+        0<E_(k,p)(t)<q^(-(b-a)*t).
+QD(k,p): there are epsilon>0 and T such that
+         E_(k,p)(t)<=exp(-epsilon*t^2) for all t>=T.
+ProfileGap(k,p): separate eventual bounds L<=exp(A*t^2),
+                R<=exp(-B*t^2), with 0<=A<B.
+Valid implications: ProfileGap -> QD -> W -> irrationality at that weight.
+QD does not automatically imply ProfileGap: oscillations in L and R can
+prevent separated rates even when their product decays quadratically.
+Finite quadratic height growth alone does not repair this implication.
+
+A product transfer E_next(t)<=exp(C*t)*E_current(t)^theta, theta>0,
+preserves both QD and W. A loss exp(o(t^2)) preserves QD but need not
+preserve W. Separate factor transfers preserve ProfileGap when their powers
+and rate losses are compatible. Index resampling is not automatic for W:
+its successful indices could miss the chosen subsequence.
+
+PAPER-ONLY EXCLUSION GUARDS RECHECKED
+Let alpha=a/b and lambda=1-alpha. Success in W, and therefore success in
+QD or ProfileGap, requires m*alpha<5. If m*alpha>=5, the interval Gram
+lower bound and AM-GM slope bound give
+     liminf log(R)/K^2 >= (3/28)*lambda > 0,
+and L>=1 prevents E from being small on unbounded indices.
+
+For k>=108, the strengthened prime-denominator argument additionally gives
+     W(k,p) -> m>=k+1 and 0<alpha<5/m<=5/(k+1).
+The argument compares a lower height rate against the upper analytic decay
+budget <(587/49)*lambda<12*lambda. It first excludes k>=2*m-1 using
+the prime interval integral, then excludes the remaining m<=k using the
+sharper collision bound once alpha<1/11.
+These are reviewed PAPER deductions. They must not be represented as
+Lean-certified rejection guards without explicit formal proofs. They show
+why an all-weight successful construction cannot retain one fixed geometry.
+
+OPEN OBLIGATIONS AND ROUTING
+Base-height route: prove, at p_2=(1,1,2), an eventual height bound with
+0<=A<delta. This is mathematically open.
+Analytic-base route: formalize the paper estimate in item 1 as the exact
+AnalyticBaseInput. The v0.3.0 height endpoint still assumes that input.
+Direct-product route: a proof of actual QD at the base can replace the two
+base estimates; no such successful base has been constructed here.
+Induction route: construct admissible profiles and prove the actual product
+transfer, including primitive normalization and any geometry change. This
+remains mathematically open. An R-only comparison cannot close this route.
+Apéry's theorem supplies weight three as a separate explicit input.
+
+No rate or threshold uniform in k is asserted or needed: every induction
+step concerns a fixed k. No single finite denominator witness establishes
+irrationality; it excludes that denominator only. No numerical scan or
+candidate profile is a proof of an all-t estimate.

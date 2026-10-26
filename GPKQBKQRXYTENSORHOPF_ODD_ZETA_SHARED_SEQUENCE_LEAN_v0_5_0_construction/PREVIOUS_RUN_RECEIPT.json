@@ -1,0 +1,20 @@
+{
+  "evidence_kind": "USER_SUPPLIED_CONSOLE_TRANSCRIPT_NOT_INDEPENDENT_REEXECUTION",
+  "package": "GPKQBKQRXYTENSORHOPF_ODD_ZETA_DERIVATION_ROUTER_LEAN_v0_4_0_construction",
+  "target": "LOCAL_COMPILER",
+  "build": "PASS_REPORTED_BY_USER",
+  "axiom_audit": "PASS_INDEPENDENT_KERNEL_WALK_REPORTED_BY_USER",
+  "modules_compiled": 3,
+  "modules_reused": 38,
+  "modules_kernel_rechecked": 0,
+  "successful_module_receipts_preserved_in_reported_run": 3,
+  "active_module_count": 41,
+  "environment_files": 44759,
+  "after_environment_hash_elapsed_ms": 3231,
+  "proof_scope": "DERIVATION_ROUTER_EXPLICIT_INPUTS_CONDITIONAL",
+  "unconditional_all_odd_zeta_irrationality": "NOT_CLAIMED",
+  "native_receipts_location": "USER_WINDOWS_LEAN_ANCHORINGS_CACHE",
+  "local_copy_of_native_receipts": "NOT_AVAILABLE",
+  "reuse_policy": "RUNNER_MUST_VALIDATE_MATCHING_NATIVE_RECEIPTS_AND_FINGERPRINTS",
+  "new_modules_native_status": "PENDING"
+}

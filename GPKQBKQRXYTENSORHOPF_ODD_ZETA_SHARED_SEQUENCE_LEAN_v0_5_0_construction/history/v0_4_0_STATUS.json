@@ -1,0 +1,42 @@
+{
+  "package": "GPKQBKQRXYTENSORHOPF_ODD_ZETA_DERIVATION_ROUTER_LEAN_v0_4_0_construction",
+  "version": "v0_4_0",
+  "branch": "GPKQBKQRXYTENSORHOPF_ODD_ZETA",
+  "workflow": "YOU_ARE_GOODWORKFLOWFRONTIER",
+  "mode": "A_TIER_LEAN",
+  "target": "LOCAL_COMPILER",
+  "local_lean_executed": false,
+  "native_build": "PENDING_USER_WINDOWS_COMPILER",
+  "new_endpoint_axiom_audit": "PENDING_USER_WINDOWS_COMPILER",
+  "unconditional_all_odd_zeta_irrationality": "NOT_CLAIMED",
+  "existing_lean_sources_preserved": 41,
+  "active_retained_modules": 38,
+  "new_active_modules": 3,
+  "active_module_count": 41,
+  "historical_audit_sources": "PRESERVED_NOT_IN_ACTIVE_BUILD_PLAN",
+  "expected_matching_cache_run": {
+    "compiled": 3,
+    "reused": 38,
+    "kernel_rechecked": 0
+  },
+  "cache_schema": "ZH_NATIVE_RECEIPT_V1",
+  "router_kind": "PROOF_BEARING_CONDITIONAL_ROUTES_NOT_WITNESS_SEARCH",
+  "base_routes": [
+    "ACTUAL_PRODUCT_DECAY",
+    "ACTUAL_SEPARATED_GAP",
+    "BASE_HEIGHT_PLUS_EXPLICIT_ANALYTIC_BASE"
+  ],
+  "transfer_routes": [
+    "ACTUAL_PRODUCT_POWER_TRANSFER",
+    "PAIRED_FACTOR_TRANSFERS_WITH_COMMON_POSITIVE_POWER",
+    "COMPOSITION_THROUGH_ACTUAL_INTERMEDIATE_NODE"
+  ],
+  "analytic_base_input": "EXPLICIT_PREMISE_PAPER_PROOF_NOT_FORMALIZED_HERE",
+  "base_height_input": "OPEN_NOT_PROVED",
+  "adjacent_product_transfer": "OPEN_NOT_PROVED_FOR_ACTUAL_PROFILES",
+  "successful_profile_witnesses": "NOT_CONSTRUCTED",
+  "original_separated_gap_conjecture_from_product_routes": "NOT_CLAIMED",
+  "paper_only_exclusions_used_as_lean_proofs": false,
+  "static_validation": "PASS_PACKAGE_INTEGRITY_AND_TWELVE_MOCK_CASES_ONLY",
+  "runner_js_sha256": "bb64f71d5ec26682f0c31a7918e448840622bb8b32e4928b6f897601f7b1808d"
+}

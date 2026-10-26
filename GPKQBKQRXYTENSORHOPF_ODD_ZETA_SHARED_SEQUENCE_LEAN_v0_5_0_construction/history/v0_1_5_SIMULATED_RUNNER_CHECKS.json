@@ -1,0 +1,124 @@
+{
+  "kind": "NODE_MOCK_HOST_BEHAVIORAL_SIMULATION_NO_NATIVE_EXECUTION",
+  "runner_sha256": "ad6218c4ad3869d773ee1a0e4786124c2372a8e69f144fd979b31ddeb7753f9c",
+  "tests": [
+    {
+      "name": "cold compile and exact receipt reuse",
+      "status": "PASS"
+    },
+    {
+      "name": "source change invalidates only its dependents",
+      "status": "PASS"
+    },
+    {
+      "name": "external dependency bytes invalidate all input keys",
+      "status": "PASS"
+    },
+    {
+      "name": "later compile failure preserves only successful prefix and resumes",
+      "status": "PASS"
+    },
+    {
+      "name": "cached object corruption fails closed without recompilation",
+      "status": "PASS"
+    },
+    {
+      "name": "malformed receipt fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "legacy32 migration uses kernel replay and only four new compilations",
+      "status": "PASS"
+    },
+    {
+      "name": "legacy missing checker never falls back to compilation",
+      "status": "PASS"
+    },
+    {
+      "name": "legacy checker rejection never falls back to compilation",
+      "status": "PASS"
+    },
+    {
+      "name": "legacy source/object linkage is mandatory",
+      "status": "PASS"
+    },
+    {
+      "name": "legacy source hash mismatch is rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "unrecorded legacy sidecar is rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "legacy missing pass cannot masquerade as compiled object",
+      "status": "PASS"
+    },
+    {
+      "name": "final environment change commits no receipts",
+      "status": "PASS"
+    },
+    {
+      "name": "missing final audit marker does not certify build",
+      "status": "PASS"
+    },
+    {
+      "name": "lock rejection preserves canonical log and foreign lock",
+      "status": "PASS"
+    },
+    {
+      "name": "new external package root during run prevents receipt publication",
+      "status": "PASS"
+    },
+    {
+      "name": "source mutation after pending creation never seals failed module",
+      "status": "PASS"
+    },
+    {
+      "name": "unexpected staged sidecar prevents acceptance of dependent modules",
+      "status": "PASS"
+    },
+    {
+      "name": "migration prefix survives Algebra failure and resumes without recheck",
+      "status": "PASS"
+    },
+    {
+      "name": "batch and single-file snapshots and receipt keys are byte-identical",
+      "status": "PASS"
+    },
+    {
+      "name": "v014 receipts are reused by v015 from a different package folder",
+      "status": "PASS"
+    },
+    {
+      "name": "environment hashing uses two batch calls instead of per-file host hash calls",
+      "status": "PASS"
+    },
+    {
+      "name": "batch parser accepts exact ordered indexed SHA256 rows",
+      "status": "PASS"
+    },
+    {
+      "name": "batch parser rejects short malformed duplicate reordered and extra rows",
+      "status": "PASS"
+    },
+    {
+      "name": "short batch hash array fails closed before compiling",
+      "status": "PASS"
+    },
+    {
+      "name": "malformed batch digest fails closed before compiling",
+      "status": "PASS"
+    },
+    {
+      "name": "batch failure in final snapshot publishes no new receipts",
+      "status": "PASS"
+    },
+    {
+      "name": "batch missing external file is fatal and never silently skipped",
+      "status": "PASS"
+    }
+  ],
+  "passed": 29,
+  "failed": 0
+}

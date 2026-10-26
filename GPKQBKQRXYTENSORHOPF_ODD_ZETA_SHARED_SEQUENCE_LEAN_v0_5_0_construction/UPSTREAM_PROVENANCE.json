@@ -1,0 +1,628 @@
+{
+  "repository": "randogelist/zetahyperbolic-axiom",
+  "commit": "211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80",
+  "sources": [
+    {
+      "module": "MAIN_CHAIN_IRRATIONALITY",
+      "blob_sha": "9b0d4369adeff0d1d8354ff5a0debe263fc1df50",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/MAIN_CHAIN_IRRATIONALITY.lean",
+      "sha256": "abbe4440ff1b6123024787987387789a544c7b4205a9ad73852936d5ab914b69",
+      "imports": [
+        "MAIN_CHAIN_ASSEMBLED",
+        "Theorem_4_1_Direct_Irrationality_From_Decay",
+        "Theorem_2_4_Primitive_Normalization_Minimality",
+        "Mathlib.Analysis.SpecialFunctions.Log.Basic"
+      ]
+    },
+    {
+      "module": "Theorem_4_1_Leading_Coefficient_Gap",
+      "blob_sha": "1d53a16a616be646e55ba4e934b3568860fe3336",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Theorem_4_1_Leading_Coefficient_Gap.lean",
+      "sha256": "05299284123a8af80ee812bf43327f61aaf14f6973244ec3308b5ba0b074630e",
+      "imports": [
+        "MAIN_CHAIN_IRRATIONALITY"
+      ]
+    },
+    {
+      "module": "Theorem_2_5_Weight_Change",
+      "blob_sha": "f4051e5b9f2a4d3454f16d79394665cf3fb3060a",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Theorem_2_5_Weight_Change.lean",
+      "sha256": "86910bdcecb9b9d8b48ef9a1f1bb6396c5270311859411fed222905302b72ced",
+      "imports": [
+        "Theorem_2_5_Lagrange_Pole_Diagonalization"
+      ]
+    },
+    {
+      "module": "MAIN_CHAIN_ASSEMBLED",
+      "blob_sha": "bea9ead2d162ce4e7ef9305eb60ea7bd6b5fc60f",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/MAIN_CHAIN_ASSEMBLED.lean",
+      "sha256": "b4d72cddd0f4a3c6c13005d4b080c43883b714ca565fa571b740aa02d1ddbdbe",
+      "imports": [
+        "ANALYTIC_FRONTIER",
+        "Zetahyperbolic.AnalyticMainChain",
+        "Theorem_3_1_Pole_Integral_Identity"
+      ]
+    },
+    {
+      "module": "Theorem_4_1_Direct_Irrationality_From_Decay",
+      "blob_sha": "f745a540f4817f5320828ee0bdbfdee7eec4319c",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Theorem_4_1_Direct_Irrationality_From_Decay.lean",
+      "sha256": "5854e02220b623a1c06d569a6246eae4236b7a3ce6f7c2bd42a353a19d231415",
+      "imports": [
+        "Theorem_4_1_Spectral_Irrationality_Measure_Criterion"
+      ]
+    },
+    {
+      "module": "Theorem_2_4_Primitive_Normalization_Minimality",
+      "blob_sha": "1b543f792dd46f64aa37c72fa4aeeb505d35c204",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Theorem_2_4_Primitive_Normalization_Minimality.lean",
+      "sha256": "eedaa21c81c3bc0739ab2ab144e7e6b2b3ced34b8f8e481111e24bc084fb1113",
+      "imports": [
+        "Theorem_2_4_Canonical_Basis_Invariance"
+      ]
+    },
+    {
+      "module": "Theorem_2_5_Lagrange_Pole_Diagonalization",
+      "blob_sha": "fcf64d4666d473e29d52d35a4a580cc4545630e2",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Theorem_2_5_Lagrange_Pole_Diagonalization.lean",
+      "sha256": "4ab4ba8669d84d6878a58cc3503d31f96037e58721ce3296421a6195cf978a83",
+      "imports": [
+        "Theorem_2_4_Canonical_Basis_Invariance",
+        "Mathlib.Algebra.Polynomial.BigOperators",
+        "Mathlib.Algebra.BigOperators.Intervals",
+        "Mathlib.LinearAlgebra.Vandermonde",
+        "Mathlib.LinearAlgebra.Matrix.Polynomial",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "module": "Zetahyperbolic.AnalyticMainChain",
+      "blob_sha": "e1d0558f1dd2152c42e628b3eac13bfb0427004d",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Zetahyperbolic/AnalyticMainChain.lean",
+      "sha256": "d0c4587bcc0b0cb3999e9973bd3410abf45608f2b3a5a75e2b132d2d45a02549",
+      "imports": [
+        "ANALYTIC_FRONTIER",
+        "Zetahyperbolic.MainChain",
+        "Zetahyperbolic.ManuscriptCompatibility"
+      ]
+    },
+    {
+      "module": "ANALYTIC_FRONTIER",
+      "blob_sha": "2e99886c477fd5acbb52dd2eeaa4076b77290491",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/ANALYTIC_FRONTIER.lean",
+      "sha256": "aa3f36a22bcfec1b3a29bd3e2d3011dd95a71a9ed56cb72248459f8c47b1a1ec",
+      "imports": [
+        "MAIN_CHAIN",
+        "Theorem_3_1_Rational_Integral_Bridge"
+      ]
+    },
+    {
+      "module": "Theorem_2_4_Canonical_Basis_Invariance",
+      "blob_sha": "15aabbc4298979b3a805dc07538e1ca2e67af1ee",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Theorem_2_4_Canonical_Basis_Invariance.lean",
+      "sha256": "72d310e0b344c2aa6310e99aee1fe672dfd43b3c93cadd958ca9abf43b90af34",
+      "imports": [
+        "Definition_2_1_Order_s_Rational_Moment_Functional",
+        "Mathlib.RingTheory.Polynomial.GaussLemma",
+        "Mathlib.Algebra.Polynomial.Degree.Units",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "module": "Theorem_3_1_Pole_Integral_Identity",
+      "blob_sha": "5dd21cf966476e54ff39167b9c646db54c18ae67",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Theorem_3_1_Pole_Integral_Identity.lean",
+      "sha256": "0bb9b8b32b6a17f31a8e3f6d92c95bc78740f2eedff53af6cc8b54fbfafa1c70",
+      "imports": [
+        "Theorem_3_1_Rational_Integral_Bridge",
+        "Theorem_3_1_Pole_Scaling",
+        "Theorem_3_1_Coth_Partial_Fractions",
+        "Theorem_3_1_Bose_Tail_Integral"
+      ]
+    },
+    {
+      "module": "Theorem_4_1_Spectral_Irrationality_Measure_Criterion",
+      "blob_sha": "1a2f5156c9dbc90de84e123a8471d5eb752546a0",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Theorem_4_1_Spectral_Irrationality_Measure_Criterion.lean",
+      "sha256": "7a4e4762865d8346f9d8ba1b36099850fc31ef4ee452960ca16770dc4d2ffa92",
+      "imports": [
+        "Theorem_3_1_Universal_Hyperbolicity_And_Zero_Free_Disk",
+        "Mathlib.Algebra.Polynomial.DenomsClearable",
+        "Mathlib.NumberTheory.Real.Irrational",
+        "Mathlib.Tactic.NormNum",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Analysis.Complex.Exponential"
+      ]
+    },
+    {
+      "module": "Theorem_3_1_Rational_Integral_Bridge",
+      "blob_sha": "e1df60468a5027560ec3b04d90e67b50959c6307",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Theorem_3_1_Rational_Integral_Bridge.lean",
+      "sha256": "5a582a718e45da1dfbe916c47dae20078e7b240d0eb039d9796a02818ac4ad76",
+      "imports": [
+        "Theorem_3_1_Hyperbolic_Moments",
+        "Mathlib.Tactic",
+        "Zetahyperbolic.ManuscriptCompatibility",
+        "Theorem_3_1_Concrete_Moment_Realization"
+      ]
+    },
+    {
+      "module": "Zetahyperbolic.MainChain",
+      "blob_sha": "39ef9b72d92e5c4294d1d7a06eeb0128f329d78e",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Zetahyperbolic/MainChain.lean",
+      "sha256": "3511a62eed6a71c9060fd6832a50eb8c5e7854ebbdfbc73bbdd5e2e95a68007f",
+      "imports": [
+        "MAIN_CHAIN",
+        "Zetahyperbolic.ManuscriptCompatibility"
+      ]
+    },
+    {
+      "module": "MAIN_CHAIN",
+      "blob_sha": "a2ea68fd4f292aee1f7917de128b8e5ccbdee1b1",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/MAIN_CHAIN.lean",
+      "sha256": "c167315c258eede8a4e0230cb0faf95a85055867d6582a8ed1a5e9d0f6ae6450",
+      "imports": [
+        "Theorem_2_4_Canonical_Basis_Invariance",
+        "Theorem_3_1_General_Odd_Weight_Endpoint",
+        "Theorem_3_1_Positive_Moment_Realization",
+        "Theorem_4_1_Spectral_Irrationality_Measure_Criterion"
+      ]
+    },
+    {
+      "module": "Definition_2_1_Order_s_Rational_Moment_Functional",
+      "blob_sha": "6f658380821c2b344e30c2857e354d97bbfa898a",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Definition_2_1_Order_s_Rational_Moment_Functional.lean",
+      "sha256": "73e1d6c965990ba7f241ffb732194bab7763eea93f6b07d3d71302a515936c5c",
+      "imports": [
+        "Mathlib.NumberTheory.LSeries.RiemannZeta",
+        "Mathlib.Analysis.PSeries",
+        "Mathlib.NumberTheory.Bernoulli",
+        "Mathlib.LinearAlgebra.Matrix.Determinant.Basic",
+        "Mathlib.Algebra.Polynomial.Div",
+        "Mathlib.Algebra.Polynomial.Derivative",
+        "Mathlib.Topology.Algebra.InfiniteSum.Real"
+      ]
+    },
+    {
+      "module": "Theorem_3_1_Coth_Partial_Fractions",
+      "blob_sha": "797d55db5cc6f0ba9c7066b9eb6723c886639922",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Theorem_3_1_Coth_Partial_Fractions.lean",
+      "sha256": "6fe401c823eceefbaecc7b4b3b2115e0897bb7637d01912889eff691e31aa74e",
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.Trigonometric.Cotangent",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "Zetahyperbolic.ManuscriptCompatibility",
+      "blob_sha": "49b1a3394f7181711308addf87609594281dbe4e",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Zetahyperbolic/ManuscriptCompatibility.lean",
+      "sha256": "e7e4d944019954289c525c025d90880fc53b30b6d3a07a52a0b918e2254efc2c",
+      "imports": [
+        "Zetahyperbolic.Section2Checked",
+        "Theorem_2_5_Lagrange_Pole_Diagonalization",
+        "Theorem_3_1_Universal_Hyperbolicity_And_Zero_Free_Disk"
+      ]
+    },
+    {
+      "module": "Theorem_3_1_Pole_Scaling",
+      "blob_sha": "921b4df8dfeb9ba5376a3b25916403d5aab81e41",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Theorem_3_1_Pole_Scaling.lean",
+      "sha256": "b4285ddaf00fcdcc01abf7c6e0678a517c7e0694cb7248ba4c1aaf7bbfab9575",
+      "imports": [
+        "Theorem_3_1_Hyperbolic_Moments",
+        "Mathlib.MeasureTheory.Integral.IntegralEqImproper"
+      ]
+    },
+    {
+      "module": "Theorem_3_1_Bose_Tail_Integral",
+      "blob_sha": "53a651247eddb7bdcd53eb4e02f3c0c99a2eb82d",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Theorem_3_1_Bose_Tail_Integral.lean",
+      "sha256": "025e9aa5f80c6be3d2ea79ce6b0c486955a3cb5974d3afe8c8bbe64d7cd63a6c",
+      "imports": [
+        "Theorem_3_1_Hyperbolic_Moments",
+        "Theorem_3_1_Zeta_Tail"
+      ]
+    },
+    {
+      "module": "Theorem_3_1_Universal_Hyperbolicity_And_Zero_Free_Disk",
+      "blob_sha": "260bf3e243a9ee8b484acf2121c6995aa4f8b426",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Theorem_3_1_Universal_Hyperbolicity_And_Zero_Free_Disk.lean",
+      "sha256": "5623f9c75519e4b88bd8c41d39656e5290520a45cec956facfa76a5234a5ac2e",
+      "imports": [
+        "Mathlib.Analysis.Matrix.Order",
+        "Theorem_2_4_Canonical_Basis_Invariance",
+        "Definition_2_1_Order_s_Rational_Moment_Functional",
+        "Mathlib.Algebra.Polynomial.BigOperators",
+        "Mathlib.Algebra.Polynomial.Degree.SmallDegree",
+        "Mathlib.LinearAlgebra.Complex.Module",
+        "Mathlib.LinearAlgebra.Matrix.Determinant.Basic",
+        "Mathlib.LinearAlgebra.Matrix.PosDef",
+        "Mathlib.LinearAlgebra.Matrix.Symmetric",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "module": "Theorem_3_1_General_Odd_Weight_Endpoint",
+      "blob_sha": "b723c7e4fb53d81c5d63ea6ec2fba75365c13806",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Theorem_3_1_General_Odd_Weight_Endpoint.lean",
+      "sha256": "0f54be96d9835151343900d072344700cd843e11d0c399340a172e91b2c90d68",
+      "imports": [
+        "Theorem_2_5_Lagrange_Pole_Diagonalization",
+        "Theorem_3_1_Universal_Hyperbolicity_And_Zero_Free_Disk"
+      ]
+    },
+    {
+      "module": "Theorem_3_1_Positive_Moment_Realization",
+      "blob_sha": "03244f44e1b254dc22408d56bfa61a6d3840231c",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Theorem_3_1_Positive_Moment_Realization.lean",
+      "sha256": "7291be864f417a11b4b39938d6e7d5c45eb48598f91348e518672389821f0248",
+      "imports": [
+        "Definition_2_1_Order_s_Rational_Moment_Functional",
+        "Mathlib.Algebra.Polynomial.OfFn",
+        "Mathlib.Algebra.Polynomial.Roots",
+        "Mathlib.LinearAlgebra.Matrix.PosDef",
+        "Mathlib.MeasureTheory.Integral.Bochner.Basic",
+        "Mathlib.MeasureTheory.Measure.Typeclasses.NullSingletonClass"
+      ]
+    },
+    {
+      "module": "Theorem_3_1_Concrete_Moment_Realization",
+      "blob_sha": "e0b482adbe6274a9b67eeaa84301e553c11782bc",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Theorem_3_1_Concrete_Moment_Realization.lean",
+      "sha256": "dadcabb037d690d321c82ce5564d7f154f7dd79284e574d0c77931e13019e50c",
+      "imports": [
+        "Theorem_3_1_Hyperbolic_Moments",
+        "Theorem_3_1_Positive_Moment_Realization",
+        "Zetahyperbolic.Section2Checked",
+        "Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap"
+      ]
+    },
+    {
+      "module": "Theorem_3_1_Hyperbolic_Moments",
+      "blob_sha": "d924c79471539ce569d8f60adb95dc77230d5841",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Theorem_3_1_Hyperbolic_Moments.lean",
+      "sha256": "649a92bfeaebfc3f49858cbbc024b7dec06a94e0156df5310e67a39741daec9d",
+      "imports": [
+        "Theorem_3_1_Hyperbolic_Weight",
+        "Mathlib.Analysis.SpecialFunctions.Gamma.Basic",
+        "Mathlib.MeasureTheory.Integral.DominatedConvergence",
+        "Mathlib.NumberTheory.ZetaValues",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "Theorem_3_1_Zeta_Tail",
+      "blob_sha": "a819f153b4a99c611464a37ff01fbee93e5a0b37",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Theorem_3_1_Zeta_Tail.lean",
+      "sha256": "e51b97c896ff81086ac2d6b8155fd438696323a0ad62ba70b7d1538c15d564af",
+      "imports": [
+        "Definition_2_1_Order_s_Rational_Moment_Functional",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "Zetahyperbolic.Section2Checked",
+      "blob_sha": "99631a5f386bd31b2547ba91bb4ef228cdb9a79d",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Zetahyperbolic/Section2Checked.lean",
+      "sha256": "97a3eebe510a69450ce92a8c880ed7341f90017d52748152e44786f8ea612822",
+      "imports": [
+        "Mathlib",
+        "Zetahyperbolic.CoreLinearAlgebra",
+        "Zetahyperbolic.Section3Elementary"
+      ]
+    },
+    {
+      "module": "Zetahyperbolic.Section3Elementary",
+      "blob_sha": "c87bc827f81378eb99338bf54f69e0febc7e24ad",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Zetahyperbolic/Section3Elementary.lean",
+      "sha256": "4f77ae02e97b3e9c2844aefd0c8bb2ee6f3e40fa179f10b320ab71b3e8e971e4",
+      "imports": [
+        "Zetahyperbolic.Foundations"
+      ]
+    },
+    {
+      "module": "Theorem_3_1_Hyperbolic_Weight",
+      "blob_sha": "8b72d16c789ecf1b7534c70a472845ade8e3039e",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Theorem_3_1_Hyperbolic_Weight.lean",
+      "sha256": "022fd5309135919ddb02767670e0f64830cc16176202add1422d6ff5d2a9ee64",
+      "imports": [
+        "Definition_2_1_Order_s_Rational_Moment_Functional",
+        "Mathlib.Analysis.SpecialFunctions.Exp",
+        "Mathlib.Analysis.SpecialFunctions.Gamma.Basic",
+        "Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral",
+        "Mathlib.MeasureTheory.Integral.DominatedConvergence",
+        "Mathlib.MeasureTheory.Constructions.Polish.Basic",
+        "Mathlib.MeasureTheory.Measure.WithDensity"
+      ]
+    },
+    {
+      "module": "Zetahyperbolic.Foundations",
+      "blob_sha": "c7c8504b7a4d9c87e0f78e8de1cc480c80a8c503",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Zetahyperbolic/Foundations.lean",
+      "sha256": "9337c13e41c8b6df1b4ff27e2d3b01b852cbaecc93a579dfd45b9a4059a5bc26",
+      "imports": [
+        "Mathlib"
+      ]
+    },
+    {
+      "module": "Zetahyperbolic.CoreLinearAlgebra",
+      "blob_sha": "cfcbda91c71cdf2ff6289806f4fca62ed42e2487",
+      "display_url": "https://github.com/randogelist/zetahyperbolic-axiom/blob/211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80/src/Zetahyperbolic/CoreLinearAlgebra.lean",
+      "sha256": "683fe127f88dae1ff89833b83f8dbfad19afaa8b0604defc6b4283f756cc23e0",
+      "imports": [
+        "Mathlib"
+      ]
+    }
+  ],
+  "local_comparison": [
+    {
+      "module": "MAIN_CHAIN_IRRATIONALITY",
+      "blob_sha": "9b0d4369adeff0d1d8354ff5a0debe263fc1df50",
+      "local_exists": false,
+      "local_sha": null,
+      "match": false
+    },
+    {
+      "module": "Theorem_4_1_Leading_Coefficient_Gap",
+      "blob_sha": "1d53a16a616be646e55ba4e934b3568860fe3336",
+      "local_exists": false,
+      "local_sha": null,
+      "match": false
+    },
+    {
+      "module": "Theorem_2_5_Weight_Change",
+      "blob_sha": "f4051e5b9f2a4d3454f16d79394665cf3fb3060a",
+      "local_exists": false,
+      "local_sha": null,
+      "match": false
+    },
+    {
+      "module": "Theorem_4_1_Determinant_Log_Energy",
+      "blob_sha": "09e45ce5e8ed43cde65542f13c16cdee0bf58833",
+      "local_exists": false,
+      "local_sha": null,
+      "match": false
+    },
+    {
+      "module": "MAIN_CHAIN_ASSEMBLED",
+      "blob_sha": "bea9ead2d162ce4e7ef9305eb60ea7bd6b5fc60f",
+      "local_exists": false,
+      "local_sha": null,
+      "match": false
+    },
+    {
+      "module": "Theorem_4_1_Direct_Irrationality_From_Decay",
+      "blob_sha": "f745a540f4817f5320828ee0bdbfdee7eec4319c",
+      "local_exists": false,
+      "local_sha": null,
+      "match": false
+    },
+    {
+      "module": "Theorem_2_4_Primitive_Normalization_Minimality",
+      "blob_sha": "1b543f792dd46f64aa37c72fa4aeeb505d35c204",
+      "local_exists": false,
+      "local_sha": null,
+      "match": false
+    },
+    {
+      "module": "Theorem_2_5_Lagrange_Pole_Diagonalization",
+      "blob_sha": "fcf64d4666d473e29d52d35a4a580cc4545630e2",
+      "local_exists": true,
+      "local_sha": "fcf64d4666d473e29d52d35a4a580cc4545630e2",
+      "match": true
+    },
+    {
+      "module": "Zetahyperbolic.AnalyticMainChain",
+      "blob_sha": "e1d0558f1dd2152c42e628b3eac13bfb0427004d",
+      "local_exists": false,
+      "local_sha": null,
+      "match": false
+    },
+    {
+      "module": "ANALYTIC_FRONTIER",
+      "blob_sha": "2e99886c477fd5acbb52dd2eeaa4076b77290491",
+      "local_exists": false,
+      "local_sha": null,
+      "match": false
+    },
+    {
+      "module": "Theorem_2_4_Canonical_Basis_Invariance",
+      "blob_sha": "15aabbc4298979b3a805dc07538e1ca2e67af1ee",
+      "local_exists": true,
+      "local_sha": "c1a29230b77d1fe05a9d9375e93e52a94e8bc6f3",
+      "match": false
+    },
+    {
+      "module": "Theorem_3_1_Pole_Integral_Identity",
+      "blob_sha": "5dd21cf966476e54ff39167b9c646db54c18ae67",
+      "local_exists": true,
+      "local_sha": "5dd21cf966476e54ff39167b9c646db54c18ae67",
+      "match": true
+    },
+    {
+      "module": "Theorem_4_1_Spectral_Irrationality_Measure_Criterion",
+      "blob_sha": "1a2f5156c9dbc90de84e123a8471d5eb752546a0",
+      "local_exists": true,
+      "local_sha": "812777668cbaac2c7b8ce95b9ca911feec457f0f",
+      "match": false
+    },
+    {
+      "module": "Theorem_3_1_Rational_Integral_Bridge",
+      "blob_sha": "e1df60468a5027560ec3b04d90e67b50959c6307",
+      "local_exists": true,
+      "local_sha": "e1df60468a5027560ec3b04d90e67b50959c6307",
+      "match": true
+    },
+    {
+      "module": "Zetahyperbolic.MainChain",
+      "blob_sha": "39ef9b72d92e5c4294d1d7a06eeb0128f329d78e",
+      "local_exists": false,
+      "local_sha": null,
+      "match": false
+    },
+    {
+      "module": "MAIN_CHAIN",
+      "blob_sha": "a2ea68fd4f292aee1f7917de128b8e5ccbdee1b1",
+      "local_exists": true,
+      "local_sha": "dd93cd9e786ccb10a7605374c8b86c5a1384b2a0",
+      "match": false
+    },
+    {
+      "module": "Definition_2_1_Order_s_Rational_Moment_Functional",
+      "blob_sha": "6f658380821c2b344e30c2857e354d97bbfa898a",
+      "local_exists": true,
+      "local_sha": "6f658380821c2b344e30c2857e354d97bbfa898a",
+      "match": true
+    },
+    {
+      "module": "Theorem_3_1_Coth_Partial_Fractions",
+      "blob_sha": "797d55db5cc6f0ba9c7066b9eb6723c886639922",
+      "local_exists": true,
+      "local_sha": "797d55db5cc6f0ba9c7066b9eb6723c886639922",
+      "match": true
+    },
+    {
+      "module": "Zetahyperbolic.ManuscriptCompatibility",
+      "blob_sha": "49b1a3394f7181711308addf87609594281dbe4e",
+      "local_exists": true,
+      "local_sha": "49b1a3394f7181711308addf87609594281dbe4e",
+      "match": true
+    },
+    {
+      "module": "Theorem_3_1_Pole_Scaling",
+      "blob_sha": "921b4df8dfeb9ba5376a3b25916403d5aab81e41",
+      "local_exists": true,
+      "local_sha": "921b4df8dfeb9ba5376a3b25916403d5aab81e41",
+      "match": true
+    },
+    {
+      "module": "Theorem_3_1_Bose_Tail_Integral",
+      "blob_sha": "53a651247eddb7bdcd53eb4e02f3c0c99a2eb82d",
+      "local_exists": true,
+      "local_sha": "53a651247eddb7bdcd53eb4e02f3c0c99a2eb82d",
+      "match": true
+    },
+    {
+      "module": "Theorem_3_1_Universal_Hyperbolicity_And_Zero_Free_Disk",
+      "blob_sha": "260bf3e243a9ee8b484acf2121c6995aa4f8b426",
+      "local_exists": true,
+      "local_sha": "5961c5987928d352df45a1f9d63e815fea275164",
+      "match": false
+    },
+    {
+      "module": "Theorem_3_1_General_Odd_Weight_Endpoint",
+      "blob_sha": "b723c7e4fb53d81c5d63ea6ec2fba75365c13806",
+      "local_exists": true,
+      "local_sha": "b723c7e4fb53d81c5d63ea6ec2fba75365c13806",
+      "match": true
+    },
+    {
+      "module": "Theorem_3_1_Positive_Moment_Realization",
+      "blob_sha": "03244f44e1b254dc22408d56bfa61a6d3840231c",
+      "local_exists": true,
+      "local_sha": "03244f44e1b254dc22408d56bfa61a6d3840231c",
+      "match": true
+    },
+    {
+      "module": "Theorem_3_1_Concrete_Moment_Realization",
+      "blob_sha": "e0b482adbe6274a9b67eeaa84301e553c11782bc",
+      "local_exists": true,
+      "local_sha": "e0b482adbe6274a9b67eeaa84301e553c11782bc",
+      "match": true
+    },
+    {
+      "module": "Theorem_3_1_Hyperbolic_Moments",
+      "blob_sha": "d924c79471539ce569d8f60adb95dc77230d5841",
+      "local_exists": true,
+      "local_sha": "d924c79471539ce569d8f60adb95dc77230d5841",
+      "match": true
+    },
+    {
+      "module": "Theorem_3_1_Zeta_Tail",
+      "blob_sha": "a819f153b4a99c611464a37ff01fbee93e5a0b37",
+      "local_exists": true,
+      "local_sha": "a819f153b4a99c611464a37ff01fbee93e5a0b37",
+      "match": true
+    },
+    {
+      "module": "Zetahyperbolic.Section2Checked",
+      "blob_sha": "99631a5f386bd31b2547ba91bb4ef228cdb9a79d",
+      "local_exists": true,
+      "local_sha": "99631a5f386bd31b2547ba91bb4ef228cdb9a79d",
+      "match": true
+    },
+    {
+      "module": "Zetahyperbolic.Section3Elementary",
+      "blob_sha": "c87bc827f81378eb99338bf54f69e0febc7e24ad",
+      "local_exists": true,
+      "local_sha": "c87bc827f81378eb99338bf54f69e0febc7e24ad",
+      "match": true
+    },
+    {
+      "module": "Theorem_3_1_Hyperbolic_Weight",
+      "blob_sha": "8b72d16c789ecf1b7534c70a472845ade8e3039e",
+      "local_exists": true,
+      "local_sha": "8b72d16c789ecf1b7534c70a472845ade8e3039e",
+      "match": true
+    },
+    {
+      "module": "Zetahyperbolic.Foundations",
+      "blob_sha": "c7c8504b7a4d9c87e0f78e8de1cc480c80a8c503",
+      "local_exists": true,
+      "local_sha": "c7c8504b7a4d9c87e0f78e8de1cc480c80a8c503",
+      "match": true
+    },
+    {
+      "module": "Zetahyperbolic.CoreLinearAlgebra",
+      "blob_sha": "cfcbda91c71cdf2ff6289806f4fca62ed42e2487",
+      "local_exists": true,
+      "local_sha": "cfcbda91c71cdf2ff6289806f4fca62ed42e2487",
+      "match": true
+    }
+  ],
+  "topological_order": [
+    "Definition_2_1_Order_s_Rational_Moment_Functional",
+    "Theorem_2_4_Canonical_Basis_Invariance",
+    "Theorem_2_5_Lagrange_Pole_Diagonalization",
+    "Theorem_3_1_Universal_Hyperbolicity_And_Zero_Free_Disk",
+    "Theorem_3_1_General_Odd_Weight_Endpoint",
+    "Theorem_3_1_Positive_Moment_Realization",
+    "Theorem_4_1_Spectral_Irrationality_Measure_Criterion",
+    "MAIN_CHAIN",
+    "Theorem_3_1_Hyperbolic_Weight",
+    "Theorem_3_1_Hyperbolic_Moments",
+    "Zetahyperbolic.CoreLinearAlgebra",
+    "Zetahyperbolic.Foundations",
+    "Zetahyperbolic.Section3Elementary",
+    "Zetahyperbolic.Section2Checked",
+    "Zetahyperbolic.ManuscriptCompatibility",
+    "Theorem_3_1_Concrete_Moment_Realization",
+    "Theorem_3_1_Rational_Integral_Bridge",
+    "ANALYTIC_FRONTIER",
+    "Zetahyperbolic.MainChain",
+    "Zetahyperbolic.AnalyticMainChain",
+    "Theorem_3_1_Pole_Scaling",
+    "Theorem_3_1_Coth_Partial_Fractions",
+    "Theorem_3_1_Zeta_Tail",
+    "Theorem_3_1_Bose_Tail_Integral",
+    "Theorem_3_1_Pole_Integral_Identity",
+    "MAIN_CHAIN_ASSEMBLED",
+    "Theorem_4_1_Direct_Irrationality_From_Decay",
+    "Theorem_2_4_Primitive_Normalization_Minimality",
+    "MAIN_CHAIN_IRRATIONALITY",
+    "Theorem_4_1_Leading_Coefficient_Gap",
+    "Theorem_2_5_Weight_Change",
+    "Theorem_4_1_Determinant_Log_Energy"
+  ],
+  "audit_walker_source": {
+    "path": "src/LeanPaper/AxiomWalk.lean",
+    "sha256": "add3a72d21ea9112c4f0e9713971f1947e23383d371987193598e7ac292e86bc",
+    "commit": "211b362c16ff6ef73e9a5f2f70c5cbb9a444cf80"
+  }
+}

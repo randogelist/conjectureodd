@@ -1,0 +1,125 @@
+DERIVATION ROUTER: HOW TO SUPPLY A ROUTE
+
+Scope: proof-consuming Lean source, pending native compilation and audit.
+No successful base, adjacent transfer, or all-weight family is supplied.
+DERIVATION_REVIEW.txt records the paper calculations and their limitations.
+
+1. THE OBJECT BEING ROUTED
+
+A node x consists of a positive weight index k and an admissible fixed
+profile p=(m,a,b), with m>=1 and 1<=a<b. Its sequences use the same t=n+1:
+
+  N=a*t, K=b*t, h=(b-a)*t,
+  L_x(t) = absolute leading coefficient of the canonical primitive polynomial,
+  R_x(t) = positive Gram determinant / absolute slope determinant,
+  E_x(t) = L_x(t)*R_x(t) > 0.
+
+The upstream exact identity identifies E with the primitive polynomial's
+value at zeta(2*k+1). Its degree is h. These are the actual ZH objects;
+substituting an independently normalized polynomial is not a route.
+
+2. THREE WAYS TO SUPPLY STARTING DECAY
+
+DecayRoute.product:
+  Supply epsilon>0 and an eventual bound E_x(t)<=exp(-epsilon*t^2).
+
+DecayRoute.separatedGap:
+  Supply the actual ProfileGap: 0<=A<B, with eventual bounds
+  L_x(t)<=exp(A*t^2) and R_x(t)<=exp(-B*t^2).
+  Multiplication gives epsilon=B-A. Thresholds can be enlarged.
+
+DecayRoute.height:
+  This branch is restricted to k=2, p=(1,1,2). Supply BOTH
+  BaseHeightInput and AnalyticBaseInput from ProfileInduction. The former
+  asks for a height exponent A<delta, where
+      delta=2*log(pi/2)+(9/2)*log(3).
+  The latter asks for every eta>0 an eventual bound
+      R(t)<=exp(-(delta-eta)*t^2).
+  Taking eta=(delta-A)/2 yields positive product decay.
+  The analytic paper derivation does not itself fill this Lean input.
+
+DecayRoute.sound converts any supplied branch into QuadraticDecay.
+irrational_of_decayRoute then discharges the existing irrationality criterion.
+
+3. THREE WAYS TO SUPPLY A TRANSFER
+
+TransferRoute.direct:
+  For actual source s and destination d, supply theta>0, C>=0 and
+  an eventual same-index inequality
+      E_d(t)<=exp(C*t)*E_s(t)^theta.
+
+TransferRoute.paired:
+  Supply theta>0 shared by both factor estimates, and C_L,C_R>=0:
+      L_d(t)<=exp(C_L*t)*L_s(t)^theta,
+      R_d(t)<=exp(C_R*t)*R_s(t)^theta.
+  The route multiplies them to give C=C_L+C_R. Different factor powers
+  require an additional argument; they are not accepted as a paired route.
+
+TransferRoute.compose:
+  Supply an accepted route s->mid and another mid->d. If their parameters
+  are (theta1,C1) and (theta2,C2), composition gives
+      theta=theta1*theta2, C=C2+theta2*C1.
+  The exact intermediate node is shared. No sampling index is changed.
+
+If E_s(t)<=exp(-epsilon*t^2), any accepted transfer gives
+      E_d(t)<=exp(C*t-theta*epsilon*t^2)
+             <=exp(-(theta*epsilon/2)*t^2)
+  once t>=2*C/(theta*epsilon) and all input thresholds hold.
+quadraticDecay_of_routes and irrational_of_routes implement this implication.
+
+4. AN ADJACENT STEP WITH A GEOMETRY CHANGE
+
+To move from s=(k,p_k) to d=(k+1,p_(k+1)), one possible route is
+  s -> mid=(k+1,p_k) -> d.
+
+The first edge may use a same-geometry adjacent R comparison, but it still
+needs the matching primitive L comparison (or a direct product estimate).
+The second edge needs its own geometry comparison for the actual product
+or both actual factors. It is not supplied by the first edge's estimate.
+Both edges may instead be replaced by one direct product comparison.
+
+The raw slope/determinant weight identities in Theorem_2_5_Weight_Change
+do not supply primitive leading-coefficient control. Content cancellation
+in primitive normalization must be addressed in any arithmetic leaf proof.
+
+5. TWO WAYS TO SUPPLY ALL WEIGHTS
+
+PerWeightRoutes:
+  For every k>=2, supply some admissible profile and its DecayRoute.
+  The profiles need not be linked by transfers.
+
+InductionRoutes:
+  Supply a profile family P with P(2)=(1,1,2), a DecayRoute at k=2,
+  and for every k>=2 a TransferRoute from (k,P(k)) to (k+1,P(k+1)).
+  The constants and positive decay exponents may depend on k. No uniform
+  positive lower bound on the decay exponents across all k is required.
+
+AllOddRoute accepts either family. The endpoint
+  ZHPreprint.DerivationRouter.all_odd_irrational_of_route
+also requires the separate irrationality of zeta(3), and concludes
+  for every integer k>0, zeta(2*k+1) is irrational.
+This is an implication from supplied evidence; it does not assert that an
+AllOddRoute exists. Proving its existence remains the mathematical problem.
+
+6. WHAT THIS ROUTER DOES NOT INFER
+
+An unfilled input is OPEN, not a contradiction. A candidate with upper
+height bound 44 and lower decay bound about 5.8469 is INCONCLUSIVE.
+Only correctly directed estimates can certify or exclude a route.
+Paper-only exclusions are advisory, and are not constructors or Lean axioms.
+Product decay does not by itself recover the original separated ProfileGap.
+The weaker all-denominator criterion is not treated as quadratic decay.
+
+7. SOURCE AND CHECK BOUNDARIES
+
+RouterAlgebra.lean: separated-gap multiplication, matched-power factor
+transfer, and composition of product transfers.
+DerivationRouter.lean: actual-profile nodes, route constructors, soundness,
+and conditional single-weight/all-weight endpoints.
+DerivationRouterAudit.lean: executable dependency walk, input-shape checks,
+and restricted axiom audit. It checks dependencies, not the truth of a
+missing estimate. Its success is meaningful only after a native run.
+
+The three additions have static source review; their native build and audit
+remain pending. All 41 prior Lean files are preserved byte-for-byte.
+The active plan is 38 retained modules plus these three additions.

@@ -1,0 +1,23 @@
+{
+  "validation_kind": "STATIC_PACKAGE_CHECKS_AND_MOCK_RUNNER_ONLY",
+  "unchanged_prior_lean_sources": 41,
+  "new_lean_modules": 3,
+  "active_modules": 41,
+  "import_order": "PASS",
+  "source_hashes": "PASS",
+  "runner_pins": "PASS",
+  "single_cmd_crlf": "PASS",
+  "hash_accelerator_and_migration_rules": "PRESERVED",
+  "new_source_no_admissions_scan": "PASS",
+  "independent_source_review": "STATIC_REVIEW_COMPLETED_NO_NATIVE_EXECUTION",
+  "independent_audit_source_review": "STATIC_REVIEW_COMPLETED_EXPLICIT_CONSTRUCTOR_CHECK",
+  "mock_cases_passed": 12,
+  "native_lean_executed": false,
+  "native_build": "PENDING",
+  "native_axiom_audit": "PENDING",
+  "height_route_analytic_premise": "EXPLICIT_NOT_FORMALIZED",
+  "router_kind": "PROOF_CONSUMING_NOT_WITNESS_SEARCH",
+  "paper_exclusions": "ADVISORY_NOT_LEAN_FACTS",
+  "product_to_separated_gap_converse": "NOT_CLAIMED",
+  "base_and_actual_transfer_proofs": "NOT_SUPPLIED"
+}

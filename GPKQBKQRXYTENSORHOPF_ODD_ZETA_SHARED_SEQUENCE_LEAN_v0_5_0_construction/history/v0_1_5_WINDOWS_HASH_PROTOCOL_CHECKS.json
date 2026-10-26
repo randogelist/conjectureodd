@@ -1,0 +1,113 @@
+{
+  "kind": "NODE_VM_FAKE_COM_WINDOWS_ADAPTER_SIMULATION_NO_NATIVE_EXECUTION",
+  "runner_sha256": "ad6218c4ad3869d773ee1a0e4786124c2372a8e69f144fd979b31ddeb7753f9c",
+  "helper_source_sha256": "a8c29c6699432a75ea03541b021e6e722b5d2e0f03dc161241850ad71902c31b",
+  "tests": [
+    {
+      "name": "two batches reuse one prepared helper and preserve exact byte hashes",
+      "status": "PASS"
+    },
+    {
+      "name": "missing csc falls back to full native per-file hashes only",
+      "status": "PASS"
+    },
+    {
+      "name": "configured worker count reaches helper unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "invalid worker count is rejected before compiling",
+      "status": "PASS"
+    },
+    {
+      "name": "altered source fails pinned integrity check",
+      "status": "PASS"
+    },
+    {
+      "name": "compiler failure fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "compiler missing output fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "source changes during compiler fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "self-test failure fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "helper changes during self-test fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "short rows fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "out-of-order rows fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "duplicate rows fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "malformed digest fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "incorrect hash caught by certutil fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "missing output fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "manifest changed during batch fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "source changed during batch fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "helper changed during batch fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "nonzero exit fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "missing pass marker fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "duplicate pass marker fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "nonmonotone progress fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong progress total fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "unexpected stdout fails closed",
+      "status": "PASS"
+    },
+    {
+      "name": "stale batch output cannot be reused",
+      "status": "PASS"
+    }
+  ],
+  "passed": 26,
+  "failed": 0
+}

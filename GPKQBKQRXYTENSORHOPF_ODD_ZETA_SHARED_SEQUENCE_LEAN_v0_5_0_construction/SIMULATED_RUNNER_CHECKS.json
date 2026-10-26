@@ -1,0 +1,53 @@
+{
+  "scope": "MOCK_RUNNER_ONLY_NO_NATIVE_OR_LEAN_EXECUTION",
+  "tests": [
+    {
+      "name": "all 44 old Lean sources preserved byte-for-byte",
+      "status": "PASS"
+    },
+    {
+      "name": "active plan retains40 modules and appends3 with unchanged cache keys",
+      "status": "PASS"
+    },
+    {
+      "name": "matching v0.4.0 receipts reuse40 and compile only3 additions",
+      "status": "PASS"
+    },
+    {
+      "name": "matching second run reuses43 with no compilation or kernel replay",
+      "status": "PASS"
+    },
+    {
+      "name": "sequence rate edit invalidates its two dependents only",
+      "status": "PASS"
+    },
+    {
+      "name": "actual sequence edit invalidates only that proof and final audit",
+      "status": "PASS"
+    },
+    {
+      "name": "audit edit invalidates only final audit",
+      "status": "PASS"
+    },
+    {
+      "name": "abstract proof failure leaves prior receipts reusable",
+      "status": "PASS"
+    },
+    {
+      "name": "concrete proof failure preserves abstract proof and resumes2 additions",
+      "status": "PASS"
+    },
+    {
+      "name": "new audit failure preserves2 proofs and resumes only audit",
+      "status": "PASS"
+    },
+    {
+      "name": "missing independent audit acceptance prevents successful run",
+      "status": "PASS"
+    },
+    {
+      "name": "corrupted prior object fails closed without recompiling it",
+      "status": "PASS"
+    }
+  ]
+}

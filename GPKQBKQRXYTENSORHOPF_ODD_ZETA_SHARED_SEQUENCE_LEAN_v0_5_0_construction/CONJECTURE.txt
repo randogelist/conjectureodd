@@ -1,0 +1,44 @@
+SHARED-SEQUENCE INDUCTION -- EXACT CONDITIONAL INPUT
+
+Choose a profile family P(k)=(m_k,a_k,b_k), with m_k>=1, 1<=a_k<b_k,
+and P(2)=(1,1,2). Choose one strictly increasing map sigma:N->N.
+All weights use the same sampled paper parameter t_j=sigma(j)+1.
+Lean j starts at zero; the paper strength index is j+1.
+
+Let E_(k,p)(n)=L_(k,p)(n)*R_(k,p)(n) be the actual positive canonical
+primitive polynomial value, sampled at paper t=n+1. The required inputs are:
+
+BASE: For every j>=0,
+  E_(2,P(2))(sigma(j)) <= exp(-(j+1)*(sigma(j)+1)).
+
+STEP: For every fixed k>=2, there are theta_k>0, C_k>=0 and J_k such that
+for every j>=J_k,
+  E_(k+1,P(k+1))(sigma(j))
+    <= exp(C_k*(sigma(j)+1))*E_(k,P(k))(sigma(j))^theta_k.
+
+The transfer may change profiles, but must compare these actual products
+including canonical primitive normalization. It holds only at the common
+sampled indices; no all-index transfer is assumed or deduced. All constants
+and thresholds may depend on k.
+
+Finite induction yields for each fixed k>=2 a bound
+  E_(k,P(k))(sigma(j))
+    <= exp((D_k-Theta_k*(j+1))*(sigma(j)+1)), eventually in j,
+where Theta_k>0 and D_k>=0. This beats every fixed rational denominator
+because the exact polynomial degree is (b_k-a_k)*(sigma(j)+1).
+The source also derives the exact logarithmic invariant as a Filter.Tendsto
+statement: -log(E_(k,P(k))(sigma(j)))/(sigma(j)+1) tends to +infinity.
+This is a formal source declaration pending native compilation and audit.
+
+The conditional endpoint supplies irrationality of every odd zeta value
+from weight five upward. The final all-odd endpoint additionally takes
+irrationality of zeta(3) as a separate explicit input.
+
+Neither an actual successful base sequence nor actual step estimates are
+proved by this package. No input is installed as an axiom. No quadratic
+decay or original separated ProfileGap conclusion is claimed. The old
+quadratic router remains preserved and is not weakened or rewritten.
+
+Native Lean compilation and independent axiom audit are pending on the
+user's offline Windows Lean 4.33.0 compiler. Source review, package checks,
+and runner mocks are not native proof verification.

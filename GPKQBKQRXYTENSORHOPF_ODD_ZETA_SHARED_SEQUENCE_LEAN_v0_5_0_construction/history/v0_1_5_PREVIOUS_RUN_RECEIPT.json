@@ -1,0 +1,61 @@
+{
+  "evidence_kind": "USER_SUPPLIED_CONSOLE_TRANSCRIPT_NOT_INDEPENDENT_REEXECUTION",
+  "package": "v0_1_2_construction",
+  "package_zip_sha256": "64e82d4d2ec75fa48cfe0eaf51f3c35039e22e6e793aeb5da4e2df8f913be5de",
+  "package_source_integrity": "PASS_REPORTED_BY_USER",
+  "build": "FAIL_REPORTED_BY_USER",
+  "modules_compiled_before_failure": 32,
+  "completed_module_names": [
+    "Definition_2_1_Order_s_Rational_Moment_Functional",
+    "Theorem_2_4_Canonical_Basis_Invariance",
+    "Theorem_2_5_Lagrange_Pole_Diagonalization",
+    "Theorem_3_1_Universal_Hyperbolicity_And_Zero_Free_Disk",
+    "Theorem_3_1_General_Odd_Weight_Endpoint",
+    "Theorem_3_1_Positive_Moment_Realization",
+    "Theorem_4_1_Spectral_Irrationality_Measure_Criterion",
+    "MAIN_CHAIN",
+    "Theorem_3_1_Hyperbolic_Weight",
+    "Theorem_3_1_Hyperbolic_Moments",
+    "Zetahyperbolic.CoreLinearAlgebra",
+    "Zetahyperbolic.Foundations",
+    "Zetahyperbolic.Section3Elementary",
+    "Zetahyperbolic.Section2Checked",
+    "Zetahyperbolic.ManuscriptCompatibility",
+    "Theorem_3_1_Concrete_Moment_Realization",
+    "Theorem_3_1_Rational_Integral_Bridge",
+    "ANALYTIC_FRONTIER",
+    "Zetahyperbolic.MainChain",
+    "Zetahyperbolic.AnalyticMainChain",
+    "Theorem_3_1_Pole_Scaling",
+    "Theorem_3_1_Coth_Partial_Fractions",
+    "Theorem_3_1_Zeta_Tail",
+    "Theorem_3_1_Bose_Tail_Integral",
+    "Theorem_3_1_Pole_Integral_Identity",
+    "MAIN_CHAIN_ASSEMBLED",
+    "Theorem_4_1_Direct_Irrationality_From_Decay",
+    "Theorem_2_4_Primitive_Normalization_Minimality",
+    "MAIN_CHAIN_IRRATIONALITY",
+    "Theorem_4_1_Leading_Coefficient_Gap",
+    "Theorem_2_5_Weight_Change",
+    "LeanPaper.AxiomWalk"
+  ],
+  "failing_module": "ZHPreprint.Algebra",
+  "reported_errors": [
+    {
+      "line": 115,
+      "error": "SIMPA_TYPE_MISMATCH_RATIONAL_DETERMINANT_CAST_TO_DERIVATIVE_MAGNITUDE"
+    },
+    {
+      "line": 119,
+      "error": "SIMPA_TYPE_MISMATCH_PARAMETER_WEIGHT_TO_EXPLICIT_ODD_WEIGHT"
+    },
+    {
+      "line": 137,
+      "error": "MUL_LE_MUL_RIGHT_MISAPPLIED_AS_IFF"
+    }
+  ],
+  "failed_declarations_printed_sorryAx": true,
+  "final_independent_axiom_audit": "NOT_REACHED",
+  "full_native_environment_fingerprint": "NOT_AVAILABLE",
+  "project_object_reuse_authorization": "NONE"
+}

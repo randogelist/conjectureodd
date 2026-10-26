@@ -1,0 +1,17 @@
+{
+  "evidence_kind": "USER_SUPPLIED_CONSOLE_TRANSCRIPT_NOT_INDEPENDENT_REEXECUTION",
+  "package": "GPKQBKQRXYTENSORHOPF_ODD_ZETA_PRIMITIVE_GROWTH_LEAN_v0_1_5_construction",
+  "target": "LOCAL_COMPILER",
+  "build": "PASS_REPORTED_BY_USER",
+  "axiom_audit": "PASS_INDEPENDENT_KERNEL_WALK_REPORTED_BY_USER",
+  "modules_compiled": 1,
+  "modules_reused": 0,
+  "modules_kernel_rechecked": 35,
+  "successful_module_receipts_preserved": 36,
+  "environment_files": 44759,
+  "after_environment_hash_elapsed_ms": 3274,
+  "native_receipts_location": "USER_WINDOWS_LEAN_ANCHORINGS_CACHE",
+  "local_copy_of_native_receipts": "NOT_AVAILABLE",
+  "reuse_policy": "RUNNER_MUST_VALIDATE_MATCHING_NATIVE_RECEIPTS_AND_FINGERPRINTS",
+  "new_modules_native_status": "PENDING"
+}

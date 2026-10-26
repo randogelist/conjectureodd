@@ -1,0 +1,41 @@
+{
+  "package": "GPKQBKQRXYTENSORHOPF_ODD_ZETA_PROFILE_INDUCTION_LEAN_v0_3_0_construction",
+  "version": "v0_3_0",
+  "branch": "GPKQBKQRXYTENSORHOPF_ODD_ZETA",
+  "workflow": "YOU_ARE_GOODWORKFLOWFRONTIER",
+  "mode": "A_TIER_LEAN",
+  "target": "LOCAL_COMPILER",
+  "local_lean_executed": false,
+  "native_build": "PENDING_USER_WINDOWS_COMPILER",
+  "new_endpoint_axiom_audit": "PENDING_USER_WINDOWS_COMPILER",
+  "unconditional_all_odd_zeta_irrationality": "NOT_CLAIMED",
+  "existing_lean_sources_preserved": 38,
+  "active_retained_modules": 36,
+  "new_active_modules": 3,
+  "active_module_count": 39,
+  "historical_audit_sources": "PRESERVED_NOT_IN_ACTIVE_BUILD_PLAN",
+  "expected_matching_cache_run": {
+    "compiled": 3,
+    "reused": 36,
+    "kernel_rechecked": 0
+  },
+  "cache_schema": "ZH_NATIVE_RECEIPT_V1",
+  "core_endpoint_premises": [
+    "BASE_PRODUCT_DECAY",
+    "ADJACENT_POWER_TRANSFER",
+    "APERY_ZETA_THREE"
+  ],
+  "height_endpoint_premises": [
+    "BASE_HEIGHT_INPUT",
+    "ANALYTIC_BASE_INPUT",
+    "ADJACENT_POWER_TRANSFER",
+    "APERY_ZETA_THREE"
+  ],
+  "analytic_base_input": "EXPLICIT_PREMISE_PAPER_PROOF_NOT_FORMALIZED_HERE",
+  "base_height_input": "OPEN_NOT_PROVED",
+  "adjacent_product_transfer": "OPEN_NOT_PROVED_FOR_ACTUAL_PROFILES",
+  "successful_profile_witnesses": "NOT_CONSTRUCTED",
+  "superseded_gap_conjectures": "PRESERVED_HISTORICAL_NOT_NEW_ENDPOINT_PREMISES",
+  "static_validation": "PASS_PACKAGE_INTEGRITY_AND_TWELVE_MOCK_CASES_ONLY",
+  "runner_js_sha256": "0684349f19fe17dd5cc4b204c267b4f8d6608bfc143a9d2e5c7aaa7c483f5b60"
+}
